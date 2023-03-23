@@ -18,3 +18,79 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Override the default bootstrap Nav Bar by Z*/
+
+html, body {
+    background-color: #000;
+    color: white;
+}
+
+.navbar-brand {
+    color: red;
+}
+
+.dropdown-toggle {
+    color: red;
+}
+
+.navbar-nav > li > a {
+    color: red;
+}
+
+.dropdown > ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    color: black;
+}
+
+    .dropdown > ul > li > a {
+        text-decoration: none;
+    }
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-nav .dropdown:hover ul {
+    display: block;
+}
+
+    .navbar-nav .dropdown:hover ul a {
+        color: black;
+    }
+
+.dropdown-toggle {
+    padding: 20px;
+}
+
+    .dropdown-toggle:hover {
+        background-color: black;
+        color: white;
+    }
+
+.course {
+    list-style: none;
+}
+
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
