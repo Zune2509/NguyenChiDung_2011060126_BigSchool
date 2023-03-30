@@ -20,23 +20,18 @@ textarea {
 }
 
 /* Override the default bootstrap Nav Bar by Z*/
-
-html, body {
-    background-color: #000;
-    color: white;
+.bg-dark {
+    background-color: #d41d50 !important;
+    border-color: #fbf6f6;
 }
 
-.navbar-brand {
-    color: red;
-}
+    .bg-dark .navbar-brand {
+        color: white;
+    }
 
-.dropdown-toggle {
-    color: red;
-}
-
-.navbar-nav > li > a {
-    color: red;
-}
+    .bg-dark .navbar-nav > li > a {
+        color: white;
+    }
 
 .dropdown > ul {
     display: none;
@@ -94,3 +89,36 @@ html, body {
             top: 0;
             left: 70px;
         }
+
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }
+
+.category {
+    display: flex;
+}
+
+.js-toggle-follow {
+    color: blue;
+}
+
+.js-toggle-attendance {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: blue;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-top: 10px;
+}
